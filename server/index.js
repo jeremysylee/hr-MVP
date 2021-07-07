@@ -31,7 +31,7 @@ app.get('/lolol', (req, res) => {
 
 setInterval(() => {
   loling = false;
-}, 10000);
+}, 15000);
 
 app.listen(port, () => {
   console.log(`server listening on port ${port}`);
