@@ -16,9 +16,11 @@ const App = () => {
     axios.get(`http://localhost:3002/lol`)
       .then((res) => {
         if (res.data === false) {
+          console.log('false')
           pause();
         } else {
           play();
+          console.log('true')
         }
       })
       .catch((err) => {
